@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+:root {
+  --primary-dark: #000000;
+  --primary-light: #979797;
+  --secondary-dark: #2730F5;
+  --secondary-light: #36b4ca;
+}
+
+@layer base{
+  html{
+    @apply scroll-smooth;
+  }
+
+  body{
+    @apply font-[Inter];
+  }
+
+  li {
+    @apply p-4 text-sm;
+  }
+
+  button
+  {
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--secondary-dark)] to-[var(--secondary-light)] text-white; 
+  }
+
+  h2
+  {
+    @apply text-xl font-bold;
+  }
+}
